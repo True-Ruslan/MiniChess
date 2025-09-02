@@ -1,10 +1,10 @@
 package dev.ruslan.minichess;
 
+import chess.mini.engine.core.Board;
+import chess.mini.engine.data.Color;
+import chess.mini.engine.data.Square;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.ruslan.minichess.controller.BoardApiController;
-import dev.ruslan.minichess.core.Board;
-import dev.ruslan.minichess.data.Color;
-import dev.ruslan.minichess.data.Square;
 import dev.ruslan.minichess.service.GameService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

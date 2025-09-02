@@ -16,26 +16,33 @@
     <name>MiniChess</name>
     <description>MiniChess</description>
 
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-
     <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
+        <connection>scm:git:git://github.com/True-Ruslan/MiniChess.git</connection>
+        <developerConnection>scm:git:ssh://github.com:True-Ruslan/MiniChess.git</developerConnection>
+        <url>https://github.com/True-Ruslan/MiniChess</url>
     </scm>
 
     <properties>
         <java.version>21</java.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/true-ruslan/MiniChess-Core</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
+        <dependency>
+            <groupId>chess.mini</groupId>
+            <artifactId>engine</artifactId>
+            <version>1.0.0-b909135</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
